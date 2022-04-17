@@ -91,7 +91,7 @@ select {
   }
 
 
-.cards {
+.todo-cards {
     min-height: 380px;
     width: 100%;
     display: flex;
@@ -101,7 +101,7 @@ select {
     margin-top: 50px;
 }
 
-.card {
+.card, .complete-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,6 +112,7 @@ select {
     color: #394049;
     background-color: #D7E0E7;
     margin: 5px 0;
+    transition: all 1s;
 }
 
 .card-icons {
@@ -128,4 +129,8 @@ select {
     height: 100%;
     width: 30px;
     padding: 13px 5px;
+}
+
+.complete-card {
+    opacity: .7;
 }
